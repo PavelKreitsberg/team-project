@@ -1,0 +1,44 @@
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__item {
+        margin-right: 16px;
+    }
+
+    &_item:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__social-list {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        & {
+            margin-bottom: 59px;
+        }        
+    }
+
+    @media screen and (min-width: $desctop-breakpoint) {
+        & {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.address {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
