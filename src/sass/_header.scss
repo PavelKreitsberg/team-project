@@ -1,0 +1,129 @@
+.header {
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    @media (max-width: 767px) {
+      left: 0;
+    }
+    @media (min-width: $tablet-breakpoint) {
+      right: 0;
+      width: 380px;
+      height: auto;
+      margin-right: 102px;
+    }
+    @media (min-width: $desktop-breakpoint) {
+      width: 793px;
+      margin-right: 0;
+    }
+  }
+
+  &__wrapper {
+    // margin-top: 9px;
+    margin-bottom: 31px;
+    @media (min-width: $tablet-breakpoint) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: 42px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $tablet-breakpoint) {
+      align-items: flex-start;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 1279px) {
+      display: none;
+    }
+    margin-left: 162px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.26;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    line-height: 0.8;
+    font-weight: 500;
+    margin-bottom: 32px;
+    @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 1.5rem;
+      line-height: 1.21;
+    }
+  }
+}
+
+.logo {
+  &--position {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    @media (min-width: $desktop-breakpoint) {
+      padding-top: 38px;
+    }
+    @media (min-width: $tablet-breakpoint) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__icon {
+    @media (min-width: $desktop-breakpoint) {
+      width: 158px;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  &__link {
+    display: block;
+  }
+}
+
+.button--mbottom {
+  margin: 0;
+  margin-bottom: 40px;
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 20px;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__link {
+    display: block;
+    padding: 20px 10px;
+  }
+}
