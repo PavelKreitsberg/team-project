@@ -6,8 +6,8 @@
 $mobile-breakpoint: 320px;
 $mobile-second-breakpoint: 480px;
 $tablet-breakpoint: 768px;
-$desctop-breakpoint: 1280px;
-$desctop-second-breakpoint: 1600px;
+$desktop-breakpoint: 1280px;
+$desktop-second-breakpoint: 1600px;
 
 // Comon colors
 
@@ -101,17 +101,19 @@ img {
 .container {
     max-width: $mobile-second-breakpoint;
     margin: 0 auto;
-    padding: 16px 20px;
+    padding: 0 20px;
 
     @media screen and (min-width: $tablet-breakpoint) {
         & {
             max-width: $desctop-breakpoint;
+            padding: 0 32px;
         }
     }
 
     @media screen and (min-width: $desctop-breakpoint) {
         & {
             max-width: $desctop-second-breakpoint;
+            padding: 0 20px;
         }
     }
 }
