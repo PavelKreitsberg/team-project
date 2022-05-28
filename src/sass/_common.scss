@@ -105,14 +105,14 @@ img {
 
     @media screen and (min-width: $tablet-breakpoint) {
         & {
-            max-width: $desctop-breakpoint;
+            max-width: $desktop-breakpoint;
             padding: 0 32px;
         }
     }
 
-    @media screen and (min-width: $desctop-breakpoint) {
+    @media screen and (min-width: $desktop-breakpoint) {
         & {
-            max-width: $desctop-second-breakpoint;
+            max-width: $desktop-second-breakpoint;
             padding: 0 20px;
         }
     }
