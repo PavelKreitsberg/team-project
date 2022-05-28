@@ -1,1 +1,164 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+
+// Breakpoints
+
+$mobile-breakpoint: 320px;
+$mobile-second-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desctop-breakpoint: 1280px;
+$desctop-second-breakpoint: 1600px;
+
+// Comon colors
+
+$main-background-color: rgba(255, 255, 249, 1);
+$second-background-color: rgba(254, 243, 228, 1);
+$accent-color: rgba(171, 129, 108, 1);
+
+$main-text-color: rgba(46, 37, 32, 1);
+$second-text-color: rgba(171, 129, 108, 0.5);
+$button-text-color: white;
+
+// Animation Function
+
+$animation-timing-function: cubic-bezier(.25, .1, .25, .1);
+
+// Additional normalizing
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: $main-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Body background
+
+body {
+    // background-image: url(../images/bcg-images/donuts-bcg.png), url(../images/bcg-images/bg.png), url(../images/bcg-images/mid-bg.png), url(../images/bcg-images/wheat-bcg.png);
+    // background-position: top left, top, 50% 90%, bottom right;
+    // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    // background-size: auto, 100% 460px, 100% 39%, auto;
+
+}
+
+// Common elements
+
+.title {
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 145px;
+    height: 40px;
+
+    font-family: 'Caveat Brush', cursive;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.28;
+    color: $button-text-color;
+
+    background: $accent-color;
+
+
+
+    border: 0px;
+    border-radius: 25px;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
+.container {
+    max-width: $mobile-second-breakpoint;
+    margin: 0 auto;
+    padding: 16px 20px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        & {
+            max-width: $desctop-breakpoint;
+        }
+    }
+
+    @media screen and (min-width: $desctop-breakpoint) {
+        & {
+            max-width: $desctop-second-breakpoint;
+        }
+    }
+}
+
+.active {
+    color: $accent-color;
+}
+
+// Form
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__input {
+    outline: none;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid $accent-color;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $second-text-color;
+    }
+}
+
+// Visually-hidden
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
