@@ -19,6 +19,37 @@
         .swiper-pagination{
             top: 590px;
         }
+
+        .swiper-pagination-current{
+            
+
+            &::before{
+            content: "";
+
+            margin-right: 12px;
+            width: 35px;
+            height: 0px;
+            left: 135px;
+            top: 2524px;
+
+            border: 1px solid $accent-color;
+            transform: rotate(180deg);
+            }           
+        }
+
+        .swiper-pagination-total{
+            &::after{
+                content: "";
+
+                margin-left: 12px;
+                width: 35px;
+                height: 0px;
+                left: 185px;
+                top: 2525px;
+                            
+                border: 1px solid $accent-color;
+            }
+        }
     }
     
 
