@@ -43,14 +43,18 @@
                 </li>
             </ul>
         </div>
-        <img class="header__img" srcset="
-        /src/images/backgrounds/mobile/bg-donuts-mobile-1x-min.png 120w,
-        /src/images/backgrounds/mobile/bg-donuts-mobile-2x-min.png 240w,
-        /src/images/backgrounds/tablet/bg-donuts-tablet-1x-min.png 380w,
-        /src/images/backgrounds/desktop/bg-donuts-desktop-1x-min.png 716w,
-            /src/images/backgrounds/tablet/bg-donuts-tablet-2x-min.png 760w,
-            /src/images/backgrounds/desktop/bg-donuts-desktop-2x-min.png 1432w"
-            sizes="(min-width: 1280px) 716px, (min-width: 768px) 380px, (max-width: 767px) 120px"
-            src="/src/images/backgrounds/mobile/bg-donuts-mobile-1x-min.png" alt="donuts" width="120">
+        <picture>
+            <source
+                srcset="/src/images/backgrounds/desktop/bg-donuts-desktop-1x-min.png 1x, /src/images/backgrounds/desktop/bg-donuts-desktop-2x-min.png 2x"
+                media="(min-width:1280px)" type="image/png">
+            <source
+                srcset="/src/images/backgrounds/tablet/bg-donuts-tablet-1x-min.png 1x, /src/images/backgrounds/tablet/bg-donuts-tablet-2x-min.png 2x"
+                media="(min-width:768px)" type="image/png">
+            <source
+                srcset="/src/images/backgrounds/mobile/bg-donuts-mobile-1x-min.png 1x,  /src/images/backgrounds/mobile/bg-donuts-mobile-2x-min.png 2x"
+                media="(max-width: 767px)" type="image/png">
+            <img class="header__img" src="/src/images/backgrounds/mobile/bg-donuts-mobile-1x-min.png" alt="donuts"
+                width="120">
+        </picture>
     </div>
 </header>
