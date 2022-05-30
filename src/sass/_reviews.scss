@@ -18,6 +18,17 @@
 
         .swiper-pagination{
             top: 590px;
+            @media only screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint){
+                top: 500px;
+            }
+            @media only screen and (min-width: $desktop-breakpoint) and (max-width: $desktop-second-breakpoint) {
+                top: 550px;
+            }
+            @media only screen and (min-width: $desktop-second-breakpoint) {
+                top: 550px;
+            }
+
+            
         }
 
         .swiper-pagination-current{
@@ -66,6 +77,22 @@
                margin-left: auto;
                margin-right: auto;
                margin-bottom: 8px;
+
+                @media only screen and (min-width: $mobile-breakpoint) and (max-width: $mobile-second-breakpoint) {
+                    width: 280px;
+                }
+                @media only screen and (min-width: $mobile-second-breakpoint) and (max-width: $tablet-breakpoint) {
+                    width: 280px;
+                }
+                @media only screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
+                    width: 336px;
+                }
+                @media only screen and (min-width: $desktop-breakpoint) and (max-width: $desktop-second-breakpoint) {
+                    width: 394px;
+                }
+                @media only screen and (min-width: $desktop-second-breakpoint) {
+                    width: 394px;
+                }
            }
 
            &__rating{
@@ -97,21 +124,18 @@
                 font-size: 16px;
                 line-height: 20px;
                 text-align: center;
+
+                @media only screen and (min-width: $tablet-breakpoint) {
+                    width: 100%;
+                }
+                @media only screen and (min-width: $desktop-breakpoint) and (max-width: $desktop-second-breakpoint) {
+                    width: 100%;
+                }
+                @media only screen and (min-width: $desktop-second-breakpoint) {
+                    width: 100%;
+                }
            }
         }
     }
 }
-
-
-/*@media only screen and ($mobile-breakpoint) {
-    .client__image #client_1 {
-    src: url(../images/reviews-images/john-photo-desktop-1x-min.png);
-    }
-}
-
-@media only screen and ($mobile-second-breakpoint) {
-    .client__image #client_1 {
-    src: url(../images/reviews-images/john-photo-desktop-1x-min.png);
-    }
-}*/
 
