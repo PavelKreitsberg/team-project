@@ -81,6 +81,13 @@ img {
     width: 145px;
     height: 40px;
 
+    @media screen and (min-width: $desktop-breakpoint) {
+        & {
+            width: 158px;
+            height: 45px;
+        }        
+    }
+
     font-family: 'Caveat Brush', cursive;
     font-style: normal;
     font-size: 18px;
