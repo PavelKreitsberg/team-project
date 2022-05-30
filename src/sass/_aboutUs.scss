@@ -31,6 +31,9 @@
 }
 .about-us__checkbox:checked ~ .about-us__switcher .about-us__less {
   display: block;
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
 }
 .about-us__checkbox:checked ~ .about-us__switcher .about-us__more {
   display: none;
