@@ -113,6 +113,13 @@
                 line-height: 17px;
 
                 text-align: center;
+
+                @media only screen and (min-width: $tablet-breakpoint) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }                
+
+                
            }
 
            &__response{       
@@ -128,12 +135,7 @@
                 @media only screen and (min-width: $tablet-breakpoint) {
                     width: 100%;
                 }
-                @media only screen and (min-width: $desktop-breakpoint) and (max-width: $desktop-second-breakpoint) {
-                    width: 100%;
-                }
-                @media only screen and (min-width: $desktop-second-breakpoint) {
-                    width: 100%;
-                }
+                
            }
         }
     }
