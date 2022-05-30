@@ -228,16 +228,16 @@
     }
 }
 
-.register__input:focus+.register__label,
-.register__input:not(:placeholder-shown)+.register__label {
-    transform: translateY(-150%);
-    font-size: 12px;
+// .register__input:focus+.register__label,
+// .register__input:not(:placeholder-shown)+.register__label {
+//     transform: translateY(-150%);
+//     font-size: 12px;
 
-    @media screen and (min-width: $tablet-breakpoint) {    
-        transform: translateY(-120%);
-    }
-}
+//     @media screen and (min-width: $tablet-breakpoint) {    
+//         transform: translateY(-120%);
+//     }
+// }
 
-.register__input:not(:placeholder-shown):invalid {
-    border-color: #FF0000;
-}
+// .register__input:not(:placeholder-shown):invalid {
+//     border-color: #FF0000;
+// }
