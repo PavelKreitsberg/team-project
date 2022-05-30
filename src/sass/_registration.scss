@@ -1,6 +1,14 @@
 .register {
     text-align: center;
-    background: #FEF3E4;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        padding-bottom: 78px;
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        padding-bottom: 160px;
+    }
 }
 
 .register__form {
@@ -169,6 +177,7 @@
     border-bottom: 1px solid $second-text-color;
     outline: none;
     background-color: transparent;
+    cursor: pointer;
     transition: border-color 250ms $animation-timing-function;
 
     &:focus,
@@ -217,6 +226,10 @@
 
     @media screen and (min-width: $desktop-breakpoint) {
         margin-top: 75px;
+        width: 158px;
+        height: 45px;
+        font-size: 24px;
+        line-height: 1.25;
     }
 }
 
@@ -228,16 +241,16 @@
     }
 }
 
-// .register__input:focus+.register__label,
-// .register__input:not(:placeholder-shown)+.register__label {
-//     transform: translateY(-150%);
-//     font-size: 12px;
+.register__input:focus+.register__label,
+.register__input:focus:not(:placeholder-shown)+.register__label {
+    transform: translateY(-150%);
+    font-size: 12px;
 
-//     @media screen and (min-width: $tablet-breakpoint) {    
-//         transform: translateY(-120%);
-//     }
-// }
+    @media screen and (min-width: $tablet-breakpoint) {    
+        transform: translateY(-120%);
+    }
+}
 
-// .register__input:not(:placeholder-shown):invalid {
-//     border-color: #FF0000;
-// }
+.register__input:focus:not(:placeholder-shown):invalid {
+    border-color: #FF0000;
+}
