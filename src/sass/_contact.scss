@@ -142,7 +142,10 @@
 
 }
 
+.contact__item:not(:placeholder-shown)+.contact__label {
+    transform: translateY(-150%);
 
+}
 .contact__item:focus:not(:placeholder-shown):invalid {
     border-color: #FF0000;
 }
