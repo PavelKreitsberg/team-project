@@ -1,23 +1,32 @@
-<section>
+<section class="contact" id="contact">
     <div class="container">
-     <div class="contacts">
-            <h2 class="title  contacts-title">Contact</h2>
-            <legend>We will answer any question!</legend>
-            
-            <form class="contacts__contacts-form  form__field" action="">
-                <label>
-                <input class="contacts__form-mail  form__input" type="email" name="email" id="email"  placeholder="Email"/>
-                
-           </label>
-              
-                <label >
-                <input  class="form__input" type="text" name="text" id="text" placeholder="Type your question"  minlength="3" required/>
-               
-                </label>
-           </form>
-            <button class="contacts__contact-btn  button" type="submit">Send</button>
-               </div>
+<section class="contact" id="contact">
+    <div class="container">
 
+        <h2 class="title contact__title">Contact</h2>
+        <legend class="contact__subtitle">We will answer any question!</legend>
+
+        <form class="contact__form">
+
+            <div class="contact__form-field ">
+                <input type="email" class="contact__item" id="mail" placeholder=" "
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                <label for="mail" class="contact__label">Email</label>
+            </div>
+
+            <div class="contact__form-field">
+                <input type="text" class="contact__item" id="text" placeholder=" " pattern="[A-Za-z]{1,60}"
+                    minlength="3" maxlength="60" required>
+                <label for="text" class="contact__label">Type your question</label>
+            </div>
+
+            </label>
+
+
+
+        </form>
+
+        <button class="contact__btn" type="submit">Send</button>
     </div>
 
 </section>
