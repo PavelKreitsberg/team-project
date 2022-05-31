@@ -15,7 +15,8 @@
             @media only screen and (min-width: $tablet-breakpoint) {
                 font-size: 24px;
                 line-height: 30px;
-                /*margin-bottom: 60px;*/
+                padding-top: 50px;
+                margin-bottom: 0;
             }
 
             @media only screen and (min-width: $desktop-breakpoint) {
@@ -170,6 +171,40 @@
     }
 
     
+}
+
+
+@media only screen and (min-width: $tablet-breakpoint) {
+    .swiper .swiper-wrapper{
+        height: 750px;
+        position: relative;
+        top: 100px;
+    }
+
+    .swiper-slide-prev{
+        position: relative;
+        left: calc(100% + 20px);   
+        top: -100px;    
+    }
+    
+    .swiper-slide-prev article, .swiper-slide-next article{
+        width: 150px;  
+    }
+    
+    .swiper-slide-next{
+        position: relative;
+        right: 170px;  
+        top: -100px;  
+       
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next{
+        .client__response{
+            display: none !important;
+        }       
+        
+    }
 }
 
 
