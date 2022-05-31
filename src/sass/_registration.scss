@@ -242,7 +242,7 @@
 }
 
 .register__input:focus+.register__label,
-.register__input:focus:not(:placeholder-shown)+.register__label {
+.register__input:not(:placeholder-shown)+.register__label {
     transform: translateY(-150%);
     font-size: 12px;
 
