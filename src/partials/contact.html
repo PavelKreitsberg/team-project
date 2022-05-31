@@ -1,0 +1,21 @@
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="title contact__title">Contact</h2>
+        <legend class="contact__subtitle">We will answer any question!</legend>
+        <form action="#" class="contact__form" autocomplete="off">
+
+            <div class="contact__form-field ">
+                <input type="email" class="contact__item" id="email" placeholder=" "
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required>
+                <label for="email" class="contact__label">Email</label>
+            </div>
+
+            <div class="contact__form-field">
+                <input type="text" class="contact__item" id="text" placeholder=" " pattern="[A-Za-z]{1,60}"
+                    minlength="3" maxlength="60" required>
+                <label for="text" class="contact__label">Type your question</label>
+            </div>
+            <button type="submit" class="contact__btn button">Send</button>
+        </form>
+    </div>
+</section>
