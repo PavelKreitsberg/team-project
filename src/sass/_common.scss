@@ -60,13 +60,94 @@ img {
 
 // Body background
 
-// body {
-//     // background-image: url(../images/bcg-images/donuts-bcg.png), url(../images/bcg-images/bg.png), url(../images/bcg-images/mid-bg.png), url(../images/bcg-images/wheat-bcg.png);
-//     // background-position: top left, top, 50% 90%, bottom right;
-//     // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-//     // background-size: auto, 100% 460px, 100% 39%, auto;
+.background {
 
-// }
+    // Mobile background
+    margin: 0 auto;
+    background-color: $main-background-color;
+    background-image: url(../images/backgrounds/mobile/bg-donuts-mobile-1x-min.png),
+        url(../images/backgrounds/mobile/bg-mobile-min.png),
+        url(../images/backgrounds/mobile/bg-mid-mobile-min.png),
+        url(../images/backgrounds/mobile/bg-wheat-mobile-1x-min.png);
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/backgrounds/mobile/bg-donuts-mobile-2x-min.png),
+                    url(../images/backgrounds/mobile/bg-mobile-min.png),
+                    url(../images/backgrounds/mobile/bg-mid-mobile-min.png),
+                    url(../images/backgrounds/mobile/bg-wheat-mobile-2x-min.png);
+            }
+        }
+    
+    background-position: top left, top, 50% 90%, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, 100% 460px, 100% 1337px, auto;
+
+    
+    
+
+    // Tablet background
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        & {
+            background-image: url(../images/backgrounds/tablet/bg-donuts-tablet-1x-min.png),
+                url(../images/backgrounds/tablet/bg-tablet-min.png),
+                url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
+                url(../images/backgrounds/tablet/bg-wheat-tablet-1x-min.png);
+            
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .box {
+                        background-image: url(../images/backgrounds/tablet/bg-donuts-tablet-2x-min.png),
+                                            url(../images/backgrounds/tablet/bg-tablet-min.png),
+                                            url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
+                                            url(../images/backgrounds/tablet/bg-wheat-tablet-2x-min.png);;
+                    }
+                }
+            
+            background-position: top right 102px, top, 50% 94%, bottom right;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-size: auto, 100% 622px, 100% 1450px, auto;
+        }
+    }
+    
+    // Desktop background
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        & {
+            max-width: $desktop-second-breakpoint;
+            background-image: url(../images/backgrounds/desktop/bg-donuts-desktop-1x-min.png),
+                                url(../images/backgrounds/desktop/bg-spoon-desktop-1x-min.png),                                
+                                url(../images/backgrounds/desktop/bg-desktop-min.png),                                
+                                url(../images/backgrounds/desktop/bg-wheat-desktop-1x-min.png),
+                                url(../images/backgrounds/desktop/bg-mid-desktop-min.png);
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .box {
+                        background-image: url(../images/backgrounds/desktop/bg-donuts-desktop-2x-min.png),
+                                            url(../images/backgrounds/desktop/bg-spoon-desktop-2x-min.png),
+                                            url(../images/backgrounds/desktop/bg-desktop-min.png),
+                                            url(../images/backgrounds/desktop/bg-wheat-desktop-2x-min.png),
+                                            url(../images/backgrounds/desktop/bg-mid-desktop-min.png);
+                    }
+                }
+                
+            background-position: top right, top 501px left, top, bottom right, 50% bottom;
+            background-repeat: no-repeat, no-repeat,no-repeat, no-repeat, no-repeat;
+            background-size: auto, auto, 100% 1035px, auto, 100% 1861px;
+        }
+    }   
+
+}
+
 
 // Common elements
 

@@ -1,23 +1,32 @@
 .header {
-  position: relative;
-  &__img {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    @media (max-width: 767px) {
-      left: 0;
+  &-container {
+    @media screen and (min-width: $tablet-breakpoint) {
+      padding-bottom: 69px;
     }
-    @media (min-width: $tablet-breakpoint) {
-      right: 0;
-      width: 380px;
-      height: auto;
-      margin-right: 102px;
-    }
-    @media (min-width: $desktop-breakpoint) {
-      width: 793px;
-      margin-right: 0;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+      padding-bottom: 111px;
     }
   }
+  // position: relative;
+  // &__img {
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: -1;
+  //   @media (max-width: 767px) {
+  //     left: 0;
+  //   }
+  //   @media (min-width: $tablet-breakpoint) {
+  //     right: 0;
+  //     width: 380px;
+  //     height: auto;
+  //     margin-right: 102px;
+  //   }
+  //   @media (min-width: $desktop-breakpoint) {
+  //     width: 793px;
+  //     margin-right: 0;
+  //   }
+  // }
 
   &__wrapper {
     // margin-top: 9px;
@@ -99,6 +108,7 @@
   &__icon {
     @media (min-width: $desktop-breakpoint) {
       width: 158px;
+      height: 81px;
     }
   }
 }
