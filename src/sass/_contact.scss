@@ -41,12 +41,12 @@
     }
 
     &__btn {
-        font-family: Caveat Brush, cursive;
         height: 40px;
         border-radius: 25px;
         background-color: $accent-color ;
         margin-top: 32px;
         color: white;
+        transition: background-color .25s $animation-timing-function;
 
         @media screen and (min-width: $mobile-breakpoint) {
             width: 145px;
@@ -65,16 +65,21 @@
     &__btn:focus,
     &__btn:hover {
         background-color: $second-text-color;
-        fill: $accent-color;
         cursor: pointer;
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: border 250ms $animation-timing-function;
     }
 
     &__title {
+        font-size: 24px;
         margin-bottom: 16px;
 
         @media screen and (min-width: $tablet-breakpoint) {
             margin-bottom: 20px;
+
+            @media screen and (min-width: $desktop-breakpoint) {
+                font-size: 36px;
+            }
+
         }
     }
 
@@ -125,9 +130,11 @@
         line-height: 1.25;
         transition: transform .25s $animation-timing-function, font-size .25s $animation-timing-function;
         position: absolute;
+        cursor: pointer;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 }
 
@@ -142,6 +149,10 @@
 
 }
 
+.contact__item:not(:placeholder-shown)+.contact__label {
+    transform: translateY(-150%);
+
+}
 
 .contact__item:focus:not(:placeholder-shown):invalid {
     border-color: #FF0000;
