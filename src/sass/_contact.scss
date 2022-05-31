@@ -69,10 +69,16 @@
     }
 
     &__title {
+        font-size: 24px;
         margin-bottom: 16px;
 
         @media screen and (min-width: $tablet-breakpoint) {
             margin-bottom: 20px;
+        
+        @media screen and (min-width: $desktop-breakpoint){
+            font-size: 36px;
+        }
+
         }
     }
 
