@@ -51,7 +51,7 @@
   }
   @media screen and (min-width: $tablet-breakpoint) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 77px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
