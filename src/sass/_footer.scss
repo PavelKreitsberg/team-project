@@ -1,65 +1,97 @@
 .footer-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    &__item {
-        margin-right: 16px;
-    }
+  &__item {
+    margin-right: 16px;
+  }
 
-    &_item:last-child {
-        margin-right: 0;
-    }
+  &__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer__social-list {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @media screen and (min-width: $tablet-breakpoint) {
-        & {
-            margin-bottom: 59px;
-        }        
+  @media screen and (min-width: $tablet-breakpoint) {
+    & {
+      margin-bottom: 59px;
     }
+  }
 
-    @media screen and (min-width: $desktop-breakpoint) {
-        & {
-            margin-bottom: 80px;
-        }
+  @media screen and (min-width: $desktop-breakpoint) {
+    & {
+      margin-bottom: 80px;
     }
+  }
 }
 
 .address {
-    &__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-        @media screen and (min-width: $tablet-breakpoint) {
-            &:last-child {
-                margin-right: 84px;
-            }            
-        }
-
-        @media screen and (min-width: $desktop-breakpoint) {
-            &:first-child {
-                margin-left: 108px;
-            }
-
-            &:last-child {
-                margin-right: 301px;
-            }
-        }
+    @media screen and (min-width: $tablet-breakpoint) {
+      &:last-child {
+        margin-right: 84px;
+      }
     }
 
-    &__link {
-        font-style: normal;
-        font-size: 16px;
-        line-height: 1.25;
+    @media screen and (min-width: $desktop-breakpoint) {
+      &:first-child {
+        margin-left: 108px;
+      }
+
+      &:last-child {
+        margin-right: 301px;
+      }
     }
+  }
+
+  &__link {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+// Добавила анимацию на иконки соцсетей
+.social-list__item {
+  position: relative;
+}
+
+.social-media__icon {
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: $accent-color;
+    transform: scale(1.6);
+  }
+}
+.social-list__link::after {
+  content: 'Share';
+  position: absolute;
+  top: 120%;
+  left: -100%;
+  opacity: 0;
+  transform: scale(0);
+  color: $accent-color;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.social-list__link:hover::after,
+.social-list__link:focus::after {
+  display: block;
+  transform: scale(0.8);
+  opacity: 0.5;
 }
