@@ -1,0 +1,29 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+
+
+    &__contacts-form {
+        display: flex;
+        flex-direction: column;
+    }    
+
+
+
+
+
+
+    &__contact-btn {
+        width: 182px;
+        height: 45px;
+        border-radius: 25px;
+        background-color:  rgba(171, 129, 108, 1);
+        font-size: 24px;
+        color: white;
+    }
+
+}
+
+
