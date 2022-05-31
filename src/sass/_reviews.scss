@@ -15,11 +15,13 @@
             @media only screen and (min-width: $tablet-breakpoint) {
                 font-size: 24px;
                 line-height: 30px;
+                /*margin-bottom: 60px;*/
             }
 
             @media only screen and (min-width: $desktop-breakpoint) {
                 font-size: 36px;
-                line-height: 1.81;      
+                line-height: 1.81; 
+                /*margin-bottom: 180px;  */   
             }
         }
     
@@ -86,7 +88,7 @@
            .client{
     
                 margin-bottom: 15px;
-    
+
                &__image{
                    margin-left: auto;
                    margin-right: auto;
@@ -169,4 +171,42 @@
 
     
 }
+
+
+@media only screen and (min-width: $desktop-breakpoint) {
+    .swiper .swiper-wrapper{
+        height: 850px;
+        position: relative;
+        top: 180px;
+    }
+
+    .swiper-slide-prev{
+        position: relative;
+        left: calc(100% + 20px);   
+        top: -180px;    
+    }
+    
+    .swiper-slide-prev article, .swiper-slide-next article{
+        width: 280px;  
+    }
+    
+    .swiper-slide-next{
+        position: relative;
+        right: 300px;  
+        top: -180px;  
+       
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next{
+        .client__response{
+            display: none !important;
+        }       
+        
+    }
+}
+
+
+
+
 
