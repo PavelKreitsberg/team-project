@@ -11,6 +11,7 @@
 
     @media screen and (min-width: $desktop-breakpoint) {
         padding-bottom: 170px;
+        justify-content: space-around;
     }
   }
   
@@ -24,7 +25,7 @@
     }
 
     @media screen and (min-width: $desktop-breakpoint) {
-        max-width: 392px;
+        min-width: 392px;
       }
   }
   
@@ -133,8 +134,8 @@
     }
 
     @media screen and (min-width: $desktop-breakpoint) {
-      max-width: 500px;
-      margin-left: 142px;
+      margin-left: 0;
+      min-width: 500px;
     }
   }
   
