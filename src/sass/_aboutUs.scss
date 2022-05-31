@@ -1,0 +1,98 @@
+.about-us__text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.about-us__text--hidden {
+  display: none;
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.about-us__less {
+  font-family: 'Caveat Brush';
+  color: $accent-color;
+  line-height: 1.28;
+  display: none;
+}
+.about-us__more {
+  font-family: 'Caveat Brush';
+  color: $accent-color;
+  line-height: 1.28;
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+.about-us__checkbox:checked ~ .about-us__switcher .about-us__less {
+  display: block;
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+.about-us__checkbox:checked ~ .about-us__switcher .about-us__more {
+  display: none;
+}
+
+.about-us__checkbox:checked ~ .about-us__text--hidden {
+  display: block;
+}
+.about-us__container {
+  display: flex;
+  @media screen and (max-width: 767.5px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 77px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    align-items: center;
+    padding-bottom: 22px;
+  }
+}
+.about-us__description {
+  @media screen and (min-width: $mobile-second-breakpoint) {
+    max-width: 440px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    max-width: 336px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    max-width: 392px;
+    margin-left: 139px;
+  }
+}
+.about-us__title {
+  margin-top: 0px;
+  @media screen and (max-width: $tablet-breakpoint) {
+    & {
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    & {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    & {
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 36px;
+      line-height: 1.81;
+    }
+  }
+}

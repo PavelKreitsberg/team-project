@@ -1,3 +1,8 @@
+.footer-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .social-list {
     display: flex;
     flex-direction: row;
@@ -34,6 +39,22 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            &:last-child {
+                margin-right: 84px;
+            }            
+        }
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            &:first-child {
+                margin-left: 108px;
+            }
+
+            &:last-child {
+                margin-right: 301px;
+            }
+        }
     }
 
     &__link {

@@ -13,11 +13,11 @@ $desktop-second-breakpoint: 1600px;
 
 $main-background-color: rgba(255, 255, 249, 1);
 $second-background-color: rgba(254, 243, 228, 1);
-$accent-color: rgba(171, 129, 108, 1);
+$accent-color: rgb(171, 129, 108);
 
-$main-text-color: rgba(46, 37, 32, 1);
+$main-text-color: rgb(46, 37, 32);
 $second-text-color: rgba(171, 129, 108, 0.5);
-$button-text-color: white;
+$button-text-color: rgb(255, 255, 255);
 
 // Animation Function
 
@@ -72,6 +72,7 @@ img {
 
 .title {
     font-family: 'Caveat Brush', cursive;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -79,6 +80,13 @@ img {
     display: block;
     width: 145px;
     height: 40px;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        & {
+            width: 158px;
+            height: 45px;
+        }        
+    }
 
     font-family: 'Caveat Brush', cursive;
     font-style: normal;

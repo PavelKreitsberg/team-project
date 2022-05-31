@@ -1,0 +1,256 @@
+.register {
+    text-align: center;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        padding-bottom: 78px;
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        padding-bottom: 160px;
+    }
+}
+
+.register__form {
+    padding: 32px 8px;
+    height: 100%;
+
+    background: #FFFFF9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+                4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: 0 auto;
+        max-height: 260px;
+        max-width: 822px;
+        min-width: 704px;
+        padding: 40px 60px 66px 60px;     
+
+        border-radius: 150px;
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        padding: 35px 106px;
+    }
+}
+
+.register__aside {
+    @media screen and (min-width: $tablet-breakpoint) {
+        padding-top: 30px;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+        padding-top: 20px;
+        padding-right: 32px;
+        min-height: 190px;
+        border-right: 1px solid rgba(171, 129, 108, 0.5);
+    }
+}
+
+.tablet__title {
+    display: none;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: block;
+        margin-bottom: 8px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 2.71;
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        margin-bottom: 16px;
+
+        font-size: 36px;
+        line-height: 1.81;    
+    }
+}
+
+.register__title {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: none;
+    }
+}
+
+.register__details {
+    margin: 0 auto 20px auto;
+    width: 114px;
+    height: 44px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-breakpoint) {    
+        max-width: 90px;
+        min-height: 66px;
+        margin-bottom: 32px;
+
+        text-align: right;
+    }
+}
+
+.register__city {
+    display: block;
+}
+
+.register__price {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 20px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        display: block;
+
+        border-bottom: none;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.register__subtitle {
+    position: relative;
+    margin: 8px 0 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: 283px;
+        margin: 0 0 16px 0;
+        text-align: left;   
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        padding-top: 20px;
+        margin-bottom: 13px;
+    }
+}
+
+.register__field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: 237px;
+        margin-bottom: 16px; 
+    }
+
+    @media screen and (min-width:$desktop-breakpoint) {
+        margin-bottom: 15px;
+    }
+}
+
+.register__input {
+    width: 100%;    
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accent-color;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $second-text-color;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-color 250ms $animation-timing-function;
+
+    &:focus,
+    &:focus-visible {
+        border-color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        font-size: 14px;
+    }
+}
+
+.register__label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;  
+
+    color: $second-text-color;
+    transition: transform 250ms $animation-timing-function,
+                font-size 250ms $animation-timing-function;
+}
+
+.register__button {
+    display: inline-block;
+    padding: 8px 47px;
+    margin: 0;
+
+    cursor: pointer;
+
+    transition: background-color 250ms $animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background: $second-text-color;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        margin-top: 70px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        margin-top: 75px;
+        width: 158px;
+        height: 45px;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+}
+
+.register__email {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        margin-bottom: 0;
+    }
+}
+
+.register__input:focus+.register__label,
+.register__input:focus:not(:placeholder-shown)+.register__label {
+    transform: translateY(-150%);
+    font-size: 12px;
+
+    @media screen and (min-width: $tablet-breakpoint) {    
+        transform: translateY(-120%);
+    }
+}
+
+.register__input:focus:not(:placeholder-shown):invalid {
+    border-color: #FF0000;
+}
