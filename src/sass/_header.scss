@@ -100,19 +100,19 @@
 .logo {
   display: inline-block;
   font-size: 0;
-  &__icon {
+  &__img {
+    @media (max-width: 767px) {
+      width: 96px;
+      height: 45px;
+    }
+
+    @media (min-width: $tablet-breakpoint) {
+      height: 48px;
+    }
     @media (min-width: $desktop-breakpoint) {
       width: 158px;
       height: 81px;
     }
-  }
-}
-
-.socials {
-  display: flex;
-  gap: 16px;
-  &__link {
-    display: block;
   }
 }
 
@@ -150,14 +150,12 @@
     font-size: 1.125rem;
     line-height: 1.22;
     transform: scale(1);
-    transition: transform 250ms $animation-timing-function;
+    transition: transform 250ms $animation-timing-function,
+      color 250ms $animation-timing-function;
     &:hover,
     &:focus {
       color: $accent-color;
       transform: scale(1.15);
-      animation-name: menuStyle;
-      animation-duration: 2500ms;
-      animation-timing-function: linear;
     }
   }
 }
