@@ -15,28 +15,23 @@
     &__form-field {
         position: relative;
         width: 100%;
-
-
-        @media screen and (min-width:$tablet-breakpoint) {
-            width: 336px;
-        }
-
-        @media screen and (min-width: $desktop-breakpoint) {
-            width: 394px;
-        }
-    }
-
-
-    &__form-field:not(:last-child) {
         margin-bottom: 20px;
 
 
-        @media screen and (min-width: $tablet-breakpoint) {
-            margin-bottom: 16px;
+     @media screen and (min-width: $tablet-breakpoint) {
+                    margin-bottom: 16px;
+                }
+            
+    @media screen and (min-width: $desktop-breakpoint) {
+                    margin-bottom: 15px;
+                }
+
+    @media screen and (min-width:$tablet-breakpoint) {
+            width: 336px;
         }
 
-        @media screen and (min-width: $desktop-breakpoint) {
-            margin-bottom: 15px;
+    @media screen and (min-width: $desktop-breakpoint) {
+            width: 394px;
         }
     }
 
@@ -117,6 +112,11 @@
         &:focus-visible {
             border-color: $accent-color;
         }
+
+     &::placeholder{
+         color: #0000;
+         font-size: 13px;
+     }   
     }
 
 
@@ -154,4 +154,8 @@
 
 .contact__item:focus:not(:placeholder-shown):invalid {
     border-color: #FF0000;
+}
+
+.text{
+    margin-bottom: 0px;
 }
