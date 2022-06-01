@@ -18,12 +18,14 @@
 .about-us__less {
   font-family: 'Caveat Brush';
   color: $accent-color;
+  font-size: 18px;
   line-height: 1.28;
   display: none;
 }
 .about-us__more {
   font-family: 'Caveat Brush';
   color: $accent-color;
+  font-size: 18px;
   line-height: 1.28;
   @media screen and (min-width: $desktop-breakpoint) {
     display: none;
