@@ -6,15 +6,35 @@
                     <use href="/src/images/sprite.svg#icon-logo"></use>
                 </svg>
             </a>
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
             <nav class="header__nav">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="">About us</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#our-program">Program</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#reviews">Reviews</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#contact">Contacts</a></li>
+                <ul class="menu" id="menu">
+                    <li class="menu__item menu-burger__item">
+                        <a class="menu__link menu-burer__link" href="#about">About us</a>
+                    </li>
+                    <li class="menu__item menu-burger__item">
+                        <a class="menu__link menu-burer__link" href="#program">Program</a>
+                    </li>
+                    <li class="menu__item menu-burger__item">
+                        <a class="menu__link menu-burer__link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="menu__item menu-burger__item">
+                        <a class="menu__link menu-burer__link" href="#contact">Contacts</a>
+                    </li>
                 </ul>
             </nav>
-            <button type="button" class="menu-open_btn">
+            <div class="popup" id="popup">
+                <a href="#" class="logo-burger"><svg width="190" height="85">
+                        <use href="./images/sprite.svg#icon-logo"></use>
+                    </svg></a>
+            </div>
+            <!-- <button type="button" class="menu-open_btn">
                 <svg width="30" height="16">
                     <use href="./images/sprite.svg#icon-open-menu-btn"></use>
                 </svg>
@@ -45,7 +65,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="header__holder">
             <h1 class="header__title">Donut Masterclass <br>with the Donut King</h1>
