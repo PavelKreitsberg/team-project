@@ -29,18 +29,23 @@
   // }
 
   &__wrapper {
-    // margin-top: 9px;
+    padding-top: 8px;
     margin-bottom: 31px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
     @media (min-width: $tablet-breakpoint) {
+      padding-top: 36px;
       margin-bottom: 16px;
     }
     @media (min-width: $desktop-breakpoint) {
+      padding-top: 38px;
       margin-bottom: 42px;
     }
 
     @media (min-width: $desktop-breakpoint) {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
     }
   }
 
@@ -93,18 +98,8 @@
 }
 
 .logo {
-  &--position {
-    display: flex;
-    justify-content: center;
-    padding-top: 8px;
-    @media (min-width: $desktop-breakpoint) {
-      padding-top: 38px;
-    }
-    @media (min-width: $tablet-breakpoint) {
-      justify-content: flex-start;
-    }
-  }
-
+  display: inline-block;
+  font-size: 0;
   &__icon {
     @media (min-width: $desktop-breakpoint) {
       width: 158px;
@@ -121,11 +116,28 @@
   }
 }
 
-.button--mbottom {
+.button--flex {
   margin: 0;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    background: $second-text-color;
+  }
+
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    line-height: 1.25;
   }
 }
 
@@ -137,5 +149,15 @@
     padding: 20px 10px;
     font-size: 1.125rem;
     line-height: 1.22;
+    transform: scale(1);
+    transition: transform 250ms $animation-timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      transform: scale(1.15);
+      animation-name: menuStyle;
+      animation-duration: 2500ms;
+      animation-timing-function: linear;
+    }
   }
 }
