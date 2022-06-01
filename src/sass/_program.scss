@@ -5,12 +5,14 @@
     @media screen and (min-width: $tablet-breakpoint) {
         display: flex;
         padding-bottom: 76px;
+        padding-top: 76px;
         justify-content: center;
         align-items: flex-start;
       }
 
     @media screen and (min-width: $desktop-breakpoint) {
         padding-bottom: 170px;
+        padding-top: 50px;
         justify-content: space-evenly;
     }
   }
