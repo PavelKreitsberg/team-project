@@ -101,6 +101,7 @@
   display: inline-block;
   font-size: 0;
   &__img {
+    object-fit: contain;
     @media (max-width: 767px) {
       width: 96px;
       height: 45px;
