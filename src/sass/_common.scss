@@ -107,22 +107,26 @@ img {
         background-image: 
             url(../images/backgrounds/tablet/bg-donuts-tablet-1x-min.png),
             url(../images/backgrounds/tablet/bg-tablet-min.png),
+            // url(../images/backgrounds/tablet/bg-donut-tablet-1x-min.png)
             url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
             url(../images/backgrounds/tablet/bg-wheat-tablet-1x-min.png);
 
         background-position: 
                             top right 102px,
                             top,
+                            // left bottom,
                             50% 94%,
                             bottom right;
         background-repeat: 
                             no-repeat,
                             no-repeat,
+                            // no-repeat,
                             no-repeat,
                             no-repeat;
         background-size: 
                             380px 361px,
                             100% 622px,
+                            // 220px 231px,
                             100% 1450px,
                             184px 119px;
     }
@@ -134,6 +138,7 @@ img {
             background-image: 
                 url(../images/backgrounds/tablet/bg-donuts-tablet-2x-min.png),
                 url(../images/backgrounds/tablet/bg-tablet-min.png),
+                // url(../images/backgrounds/tablet/bg-donut-tablet-2x-min.png)
                 url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
                 url(../images/backgrounds/tablet/bg-wheat-tablet-2x-min.png);
             ;

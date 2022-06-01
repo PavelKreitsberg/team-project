@@ -155,14 +155,14 @@ body.noscroll {
   }
 }
 .hamb__field {
-  padding: 10px 20px;
+  // padding: 10px 20px;
   cursor: pointer;
 }
 .bar {
   display: block;
   width: 20px;
   height: 2px;
-  margin: 5px auto;
+  margin: 4px auto;
   background-color: rgba(46, 37, 32, 1);
   transition: 0.2s;
 }
