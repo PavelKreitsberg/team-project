@@ -15,6 +15,16 @@
     &__form-field {
         position: relative;
         width: 100%;
+        margin-bottom: 20px;
+
+
+        @media screen and (min-width: $tablet-breakpoint) {
+                margin-bottom: 16px;
+            }
+        
+            @media screen and (min-width: $desktop-breakpoint) {
+                margin-bottom: 15px;
+            }
 
 
         @media screen and (min-width:$tablet-breakpoint) {
@@ -27,20 +37,12 @@
     }
 
 
-    &__form-field:not(:last-child) {
-        margin-bottom: 20px;
-
-
-        @media screen and (min-width: $tablet-breakpoint) {
-            margin-bottom: 16px;
-        }
-
-        @media screen and (min-width: $desktop-breakpoint) {
-            margin-bottom: 15px;
-        }
-    }
-
-    &__btn {
+    &__text {
+     margin-bottom: 0px;
+     }
+    
+    
+     &__btn {
         height: 40px;
         border-radius: 25px;
         background-color: $accent-color ;
