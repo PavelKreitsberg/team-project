@@ -40,6 +40,10 @@
 }
 
 .register__aside {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
+
     @media screen and (min-width: $tablet-breakpoint) {
         padding-top: 30px;
     }
@@ -111,7 +115,7 @@
 .register__price {
     display: inline-block;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 4px;
 
     text-align: center;
     font-weight: 500;
@@ -131,7 +135,7 @@
 
 .register__subtitle {
     position: relative;
-    margin: 8px 0 20px 0;
+    margin: 0 0 20px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -148,18 +152,32 @@
     }
 }
 
+.register__form-field {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
 .register__field {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
 
     @media screen and (min-width: $tablet-breakpoint) {
         width: 237px;
-        margin-bottom: 16px; 
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }     
     }
 
     @media screen and (min-width:$desktop-breakpoint) {
-        margin-bottom: 15px;
+        &:not(:last-child) {
+                margin-bottom: 15px;
+            }
     }
 }
 
@@ -179,6 +197,11 @@
     background-color: transparent;
     cursor: pointer;
     transition: border-color 250ms $animation-timing-function;
+
+    &::placeholder {
+        font-size: 14px;
+        color: transparent;
+    }
 
     &:focus,
     &:focus-visible {
@@ -231,14 +254,6 @@
         height: 45px;
         font-size: 24px;
         line-height: 1.25;
-    }
-}
-
-.register__email {
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet-breakpoint) {
-        margin-bottom: 0;
     }
 }
 
