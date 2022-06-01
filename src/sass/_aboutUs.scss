@@ -54,11 +54,10 @@
   @media screen and (min-width: $tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 77px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     align-items: center;
-     }
+  }
 }
 .about-us__description {
   @media screen and (min-width: $mobile-second-breakpoint) {
@@ -67,18 +66,17 @@
 
   @media screen and (min-width: $tablet-breakpoint) {
     max-width: 336px;
-    margin-left: 32px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     max-width: 392px;
-    margin-left: 139px;
+  }
+  @media screen and (max-width: $tablet-breakpoint) {
+    padding-top: 16px;
   }
 }
 .about-us__title {
-  margin-top: 0px;
   @media screen and (max-width: $tablet-breakpoint) {
     & {
-      margin-top: 16px;
       margin-bottom: 8px;
     }
   }
