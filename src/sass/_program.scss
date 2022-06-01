@@ -11,7 +11,7 @@
 
     @media screen and (min-width: $desktop-breakpoint) {
         padding-bottom: 170px;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
   }
   
@@ -140,6 +140,7 @@
   }
   
   .program__donut-item {
+    transition: transform 250ms $animation-timing-function, background 250ms $animation-timing-function;
     position: relative;
     flex-basis: calc((100% - 20px) / 2);
     max-width: 130px;
@@ -149,6 +150,11 @@
     margin-bottom: 64px;
     background: $second-background-color;
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);  
+
+    &:hover {
+      transform: scale(1.1);
+      background: rgba(254, 243, 228, 0.4);
+    }
 
     @media screen and (min-width: $tablet-breakpoint) {
       flex-basis: calc((100% - 32px) / 2);
@@ -188,6 +194,26 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+
+    .program__donut-item:hover & {
+      animation-play-state: running;
+    }    
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
   .program__donut-wrapper {  
