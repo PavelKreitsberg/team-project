@@ -107,26 +107,30 @@ img {
         background-image: 
             url(../images/backgrounds/tablet/bg-donuts-tablet-1x-min.png),
             url(../images/backgrounds/tablet/bg-tablet-min.png),
-            // url(../images/backgrounds/tablet/bg-donut-tablet-1x-min.png)
+            url(../images/backgrounds/tablet/bg-donut-tablet-1x-min.png),
+            url(../images/backgrounds/tablet/bg-confetti-tablet-1x-min.png),
             url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
             url(../images/backgrounds/tablet/bg-wheat-tablet-1x-min.png);
 
         background-position: 
                             top right 102px,
                             top,
-                            // left bottom,
+                            left bottom 600px,
+                            right bottom 350px,
                             50% 94%,
                             bottom right;
         background-repeat: 
                             no-repeat,
                             no-repeat,
-                            // no-repeat,
+                            no-repeat,
+                            no-repeat,
                             no-repeat,
                             no-repeat;
         background-size: 
                             380px 361px,
                             100% 622px,
-                            // 220px 231px,
+                            196px 200px,
+                            287px 374px,
                             100% 1450px,
                             184px 119px;
     }
@@ -138,7 +142,8 @@ img {
             background-image: 
                 url(../images/backgrounds/tablet/bg-donuts-tablet-2x-min.png),
                 url(../images/backgrounds/tablet/bg-tablet-min.png),
-                // url(../images/backgrounds/tablet/bg-donut-tablet-2x-min.png)
+                url(../images/backgrounds/tablet/bg-donut-tablet-2x-min.png),
+                url(../images/backgrounds/tablet/bg-confetti-tablet-2x-min.png),
                 url(../images/backgrounds/tablet/bg-mid-tablet-min.png),
                 url(../images/backgrounds/tablet/bg-wheat-tablet-2x-min.png);
             ;
@@ -155,6 +160,8 @@ img {
         background-image: 
             url(../images/backgrounds/desktop/bg-donuts-desktop-1x-min.png),
             url(../images/backgrounds/desktop/bg-spoon-desktop-1x-min.png),
+            url(../images/backgrounds/desktop/bg-donut-desktop-1x-min.png),
+            url(../images/backgrounds/desktop/bg-confetti-desktop-1x-min.png),
             url(../images/backgrounds/desktop/bg-desktop-min.png),
             url(../images/backgrounds/desktop/bg-wheat-desktop-1x-min.png),
             url(../images/backgrounds/desktop/bg-mid-desktop-min.png);        
@@ -162,6 +169,8 @@ img {
         background-position: 
                             top right,
                             top 501px left,
+                            left 275px bottom 745px,
+                            right 70px bottom 310px,
                             top,
                             bottom right,
                             50% bottom;
@@ -170,10 +179,14 @@ img {
                             no-repeat,
                             no-repeat,
                             no-repeat,
+                            no-repeat,
+                            no-repeat,
                             no-repeat;
         background-size: 
                             716px 661px,
                             145px 450px,
+                            196px 200px,
+                            566px 589px,
                             100% 1035px,
                             302px 175px,
                             100% 1760px;
@@ -186,6 +199,8 @@ img {
                 background-image: 
                     url(../images/backgrounds/desktop/bg-donuts-desktop-2x-min.png),
                     url(../images/backgrounds/desktop/bg-spoon-desktop-2x-min.png),
+                    url(../images/backgrounds/desktop/bg-donut-desktop-2x-min.png),
+                    url(../images/backgrounds/desktop/bg-confetti-desktop-2x-min.png),
                     url(../images/backgrounds/desktop/bg-desktop-min.png),
                     url(../images/backgrounds/desktop/bg-wheat-desktop-2x-min.png),
                     url(../images/backgrounds/desktop/bg-mid-desktop-min.png);
