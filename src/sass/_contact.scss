@@ -82,6 +82,7 @@
     }
 
     &__subtitle {
+        text-align: center;
         margin: 0px 0 16px 0;
         font-weight: 400;
         font-size: 16px;
@@ -112,6 +113,11 @@
         font-weight: 400;
         line-height: 1.25;
         transition: border-color .25s $animation-timing-function;
+       
+        &::placeholder {
+                font-size: 14px;
+                color: transparent;
+            }
 
         &:focus,
         &:focus-visible {
@@ -137,7 +143,7 @@
 }
 
 .contact__item:focus+.contact__label,
-.contact__item:focus:not(:placeholder-shown)+.contact__label {
+.contact__item:not(:placeholder-shown)+.contact__label {
     transform: translateY(-150%);
     font-size: 12px;
 
@@ -147,10 +153,6 @@
 
 }
 
-.contact__item:not(:placeholder-shown)+.contact__label {
-    transform: translateY(-150%);
-
-}
 
 .contact__item:focus:not(:placeholder-shown):invalid {
     border-color: #FF0000;
