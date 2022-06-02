@@ -46,7 +46,7 @@
         background-color: $accent-color ;
         margin-top: 32px;
         color: white;
-        transition: background-color .25s cubic-bezier(.25, .1, .25, .1);;
+        transition: background-color .25s cubic-bezier(.25, .1, .25, .1);
 
         @media screen and (min-width: $mobile-breakpoint) {
             width: 145px;
