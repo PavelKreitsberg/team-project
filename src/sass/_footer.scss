@@ -69,8 +69,8 @@
 }
 
 .social-media__icon {
-  transition: fill $animation-time $animation-timing-function,
-    transform $animation-time $animation-timing-function;
+  transition: fill $animation-timing-function,
+    transform $animation-timing-function;
   .social-list__link:hover &,
   .social-list__link:focus & {
     fill: $accent-color;
@@ -85,8 +85,8 @@
   opacity: 0;
   transform: scale(0);
   color: $accent-color;
-  transition: transform $animation-time $animation-timing-function,
-    opacity $animation-time $animation-timing-function;
+  transition: transform $animation-timing-function,
+    opacity $animation-timing-function;
 
 }
 .social-list__link:hover::after,
