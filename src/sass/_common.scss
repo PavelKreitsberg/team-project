@@ -115,7 +115,7 @@ img {
         background-position: 
                             top right 102px,
                             top,
-                            left bottom 600px,
+                            left bottom 620px,
                             right bottom 350px,
                             50% 94%,
                             bottom right;
@@ -156,7 +156,7 @@ img {
 
 @media screen and (min-width: $desktop-breakpoint) {
     .background {
-        max-width: $desktop-second-breakpoint;
+        // max-width: $desktop-second-breakpoint;
         background-image: 
             url(../images/backgrounds/desktop/bg-donuts-desktop-1x-min.png),
             url(../images/backgrounds/desktop/bg-spoon-desktop-1x-min.png),
@@ -169,8 +169,8 @@ img {
         background-position: 
                             top right,
                             top 501px left,
-                            left 275px bottom 745px,
-                            right 70px bottom 310px,
+                            left calc(50% - 411px) bottom 700px,
+                            right calc(50% - 350px) bottom 300px,
                             top,
                             bottom right,
                             50% bottom;
