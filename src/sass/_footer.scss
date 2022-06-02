@@ -69,8 +69,8 @@
 }
 
 .social-media__icon {
-  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $animation-time $animation-timing-function,
+    transform $animation-time $animation-timing-function;
   .social-list__link:hover &,
   .social-list__link:focus & {
     fill: $accent-color;
@@ -85,8 +85,8 @@
   opacity: 0;
   transform: scale(0);
   color: $accent-color;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $animation-time $animation-timing-function,
+    opacity $animation-time $animation-timing-function;
 
 }
 .social-list__link:hover::after,
