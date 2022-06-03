@@ -15,30 +15,21 @@
     &__form-field {
         position: relative;
         width: 100%;
+        margin-bottom: 20px;
 
 
         @media screen and (min-width:$tablet-breakpoint) {
             width: 336px;
-        }
-
-        @media screen and (min-width: $desktop-breakpoint) {
-            width: 394px;
-        }
-    }
-
-
-    &__form-field:not(:last-child) {
-        margin-bottom: 20px;
-
-
-        @media screen and (min-width: $tablet-breakpoint) {
             margin-bottom: 16px;
         }
 
         @media screen and (min-width: $desktop-breakpoint) {
+            width: 394px;
             margin-bottom: 15px;
         }
     }
+
+
 
     &__btn {
         height: 40px;
