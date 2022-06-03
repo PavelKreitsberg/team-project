@@ -115,8 +115,8 @@ img {
         background-position: 
                             top right 102px,
                             top,
-                            left bottom 620px,
-                            right bottom 350px,
+                            left calc(50% - 285px) bottom 610px,
+                            right calc(50% - 250px) bottom 330px,
                             50% 94%,
                             bottom right;
         background-repeat: 
