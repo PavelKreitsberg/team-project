@@ -124,7 +124,7 @@
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms $animation-timing-function;
+  transition: background-color $animation-timing-function;
 
   &:hover,
   &:focus {
@@ -151,8 +151,8 @@
     font-size: 1.125rem;
     line-height: 1.22;
     transform: scale(1);
-    transition: transform 250ms $animation-timing-function,
-      color 250ms $animation-timing-function;
+    transition: transform $animation-timing-function,
+      color $animation-timing-function;
     &:hover,
     &:focus {
       color: $accent-color;
@@ -162,8 +162,8 @@
 }
 
 .social-media__icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $animation-timing-function,
+    transform $animation-timing-function ;
   .social-list__link-header:hover &,
   .social-list__link-header:focus & {
     fill: $accent-color;

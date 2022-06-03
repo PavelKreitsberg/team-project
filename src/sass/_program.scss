@@ -142,7 +142,7 @@
   }
   
   .program__donut-item {
-    transition: transform 250ms $animation-timing-function, background 250ms $animation-timing-function;
+    transition: transform $animation-timing-function, background $animation-timing-function;
     position: relative;
     flex-basis: calc((100% - 20px) / 2);
     max-width: 130px;
