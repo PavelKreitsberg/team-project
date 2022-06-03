@@ -196,7 +196,7 @@
     outline: none;
     background-color: transparent;
     cursor: pointer;
-    transition: border-color 250ms $animation-timing-function;
+    transition: border-color $animation-timing-function;
 
     &::placeholder {
         font-size: 14px;
@@ -226,8 +226,8 @@
     cursor: pointer;
 
     color: $second-text-color;
-    transition: transform 250ms $animation-timing-function,
-                font-size 250ms $animation-timing-function;
+    transition: transform $animation-timing-function,
+                font-size $animation-timing-function;
 }
 
 .register__button {
@@ -237,7 +237,7 @@
 
     cursor: pointer;
 
-    transition: background-color 250ms $animation-timing-function;
+    transition: background-color $animation-timing-function;
 
     &:hover,
     &:focus {
