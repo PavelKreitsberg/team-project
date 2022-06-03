@@ -15,30 +15,21 @@
     &__form-field {
         position: relative;
         width: 100%;
+        margin-bottom: 20px;
 
 
         @media screen and (min-width:$tablet-breakpoint) {
             width: 336px;
-        }
-
-        @media screen and (min-width: $desktop-breakpoint) {
-            width: 394px;
-        }
-    }
-
-
-    &__form-field:not(:last-child) {
-        margin-bottom: 20px;
-
-
-        @media screen and (min-width: $tablet-breakpoint) {
             margin-bottom: 16px;
         }
 
         @media screen and (min-width: $desktop-breakpoint) {
+            width: 394px;
             margin-bottom: 15px;
         }
     }
+
+
 
     &__btn {
         height: 40px;
@@ -46,7 +37,7 @@
         background-color: $accent-color ;
         margin-top: 32px;
         color: white;
-        transition: background-color .25s cubic-bezier(.25, .1, .25, .1);;
+        transition: background-color $animation-timing-function;
 
         @media screen and (min-width: $mobile-breakpoint) {
             width: 145px;
@@ -82,7 +73,7 @@
     }
 
     &__subtitle {
-        margin: 0px 0 16px 0;
+        margin: 0px auto 16px auto;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -111,7 +102,12 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
-        transition: border-color .25s $animation-timing-function;
+        transition: border-color $animation-timing-function;
+
+        &::placeholder {
+            font-size: 14px;
+            color: transparent;
+        }
 
         &:focus,
         &:focus-visible {
@@ -126,7 +122,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
-        transition: transform .25s $animation-timing-function, font-size .25s $animation-timing-function;
+        transition: transform $animation-timing-function, font-size $animation-timing-function;
         position: absolute;
         cursor: pointer;
         top: 50%;
@@ -137,7 +133,7 @@
 }
 
 .contact__item:focus+.contact__label,
-.contact__item:focus:not(:placeholder-shown)+.contact__label {
+.contact__item:not(:placeholder-shown)+.contact__label {
     transform: translateY(-150%);
     font-size: 12px;
 
@@ -147,11 +143,12 @@
 
 }
 
-.contact__item:not(:placeholder-shown)+.contact__label {
-    transform: translateY(-150%);
-
-}
 
 .contact__item:focus:not(:placeholder-shown):invalid {
     border-color: #FF0000;
+}
+
+
+.text-field {
+    margin-bottom: 0px;
 }
